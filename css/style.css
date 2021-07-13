@@ -1,0 +1,207 @@
+
+/* common styles */
+
+body {
+
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.container {
+
+    width: 870px;
+    background-color: white;
+    padding: 30px 30px 42px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.section-title {
+ 
+    font-size: 24px;
+    color: #562EFF;
+    margin: 5px 0px 35px;
+
+}
+
+hr {
+
+    border: 1px solid #D1D1D1;
+    margin: 30px;
+
+
+}
+
+
+
+/* top player */
+
+.players {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+
+    width: 56px;
+    height: 56px;
+}
+
+.player h3 {
+
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+/* top - blog */
+
+.blogs {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 26px;
+}
+
+
+.blog {
+
+    display: flex;
+}
+
+
+.blog .tumbnail img {
+
+    width: 177px;
+    height: 117px;
+}
+
+.blog .blog-info  {
+
+    margin-left: 16px;
+}
+
+.blog-info  h3 {
+
+    font-size: 20px;
+    margin: 0px;
+}
+
+.blog-info p {
+
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.blog-info .aurthor {
+
+    text-decoration: none;
+}
+
+    /* course */
+
+.courses {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+
+}
+
+.course {
+
+    box-shadow: 5px 5px 10px rgb(211, 210, 210);
+    padding: 15px 12px;
+    border-radius: 14px;
+}
+
+.course .course-banner img {
+
+    width: 224px;
+    height: 104px;
+}
+
+.course .course-details h3 {
+
+    font-size: 21px;
+    color: #1E1E1E;
+    margin: 20px 0px 7px;
+}
+
+.course-details  p {
+
+    color: #ED6B4F;
+    font-size: 12px;
+    margin: 0px 0px 13px;
+}
+
+.course-info {
+
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating .filled {
+    
+    color: #FFC014;
+}
+.rating .empty {
+    
+    color: #AEAEAE;
+}
+
+.rating  span {
+
+    margin-left: 10px;
+}
+
+.course-duration {
+
+    color: #FF4A60;
+    background-color: #FEE5DF;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width:688px) {
+    
+    .container {
+
+        width: 100%;
+    }
+
+    .players {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player{
+
+        flex-direction: column;
+    }
+
+    .blogs .courses {
+
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
