@@ -199,9 +199,19 @@ hr {
         flex-direction: column;
     }
 
+    .player h3 {
+        text-align: center;
+    } 
+
     .blogs, .courses {
 
         grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .courses {
+
+        grid-row-gap: 30px;
     }
 
     
